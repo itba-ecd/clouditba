@@ -27,7 +27,7 @@ echo $SEAC
 
 
 # 8vcpu  32 GB RAM
-gcloud compute instance-templates delete temp-08vcpu-032ram  --quiet  --verbosity=none
+gcloud beta compute instance-templates delete temp-08vcpu-032ram  --region=northamerica-northeast2 --quiet  --verbosity=none
 
 gcloud beta compute instance-templates create temp-08vcpu-032ram         \
        --machine-type=custom-8-32768-ext                            \
@@ -46,7 +46,7 @@ gcloud beta compute instance-templates create temp-08vcpu-032ram         \
 
 
 # 8vcpu  64 GB RAM
-gcloud compute instance-templates delete temp-08vcpu-064ram  --quiet  --verbosity=none
+gcloud compute instance-templates delete temp-08vcpu-064ram  --region=northamerica-northeast2 --quiet  --verbosity=none
 
 gcloud compute instance-templates create temp-08vcpu-064ram         \
        --machine-type=custom-8-65536-ext                            \
@@ -65,7 +65,7 @@ gcloud compute instance-templates create temp-08vcpu-064ram         \
 
 
 # 8vcpu  128 GB RAM
-gcloud compute instance-templates delete temp-08vcpu-128ram  --quiet  --verbosity=none
+gcloud compute instance-templates delete temp-08vcpu-128ram  --region=northamerica-northeast2 --quiet  --verbosity=none
 
 gcloud compute instance-templates create temp-08vcpu-128ram         \
        --machine-type=custom-8-131072-ext                           \
@@ -85,7 +85,7 @@ gcloud compute instance-templates create temp-08vcpu-128ram         \
 
 
 # 8vcpu  256 GB RAM
-gcloud compute instance-templates delete temp-08vcpu-256ram   --quiet  --verbosity=none
+gcloud compute instance-templates delete temp-08vcpu-256ram  --region=northamerica-northeast2 --quiet  --verbosity=none
 
 gcloud compute instance-templates create temp-08vcpu-256ram         \
        --machine-type=custom-8-262144-ext                           \
@@ -104,7 +104,7 @@ gcloud compute instance-templates create temp-08vcpu-256ram         \
 
 
 # 8vcpu  512 GB RAM
-gcloud compute instance-templates delete temp-08vcpu-512ram   --quiet  --verbosity=none
+gcloud compute instance-templates delete temp-08vcpu-512ram  --region=northamerica-northeast2 --quiet  --verbosity=none
 
 gcloud compute instance-templates create temp-08vcpu-512ram         \
        --machine-type=custom-8-524288-ext                           \
