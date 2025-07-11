@@ -7,13 +7,13 @@
 github_catedra_user="itba-ecd"
 github_install_repo="clouditba"
 
-sudo  DEBIAN_FRONTEND=noninteractive  apt-get update htop
+sudo  DEBIAN_FRONTEND=noninteractive  apt-get update
 
 rm -rf  /home/$USER/install
 mkdir  -p  /home/$USER/install
 mkdir  -p  /home/$USER/log
 
-sudo  apt-get --yes  install  git rsync
+sudo  apt-get --yes  install  git rsync htop
 
 
 # clono el repo de instalacion
