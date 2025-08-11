@@ -18,6 +18,7 @@ gcloud --quiet services enable  storage-component.googleapis.com
 gcloud --quiet services enable  storage.googleapis.com
 
 
+
 sudo  DEBIAN_FRONTEND=noninteractive  apt-get update
 
 rm -rf  /home/$USER/install
